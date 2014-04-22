@@ -1,0 +1,277 @@
+/*		  
+Olá mundo! 
+Este CSS foi criado pela designer Dani Guerrato como demo de um artigo do Tableless.
+
+Web:       www.tableless.com.br
+E-mail:    dani@popupdesign.com.br
+
+Divirta-se! :)
+*/
+
+/* ==========================================================================
+   Normatização CSS
+   ========================================================================== */
+
+body {
+    font-size: 62.5%;
+    line-height: 1.5;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    color: #00ccff;
+    text-decoration: none;
+    font-size: 1.6em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==|== Estilos Principais ================================================== */
+
+.container {
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+img,
+picture,
+video,
+embed {
+    max-width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 48px;
+    margin-top: 3.6em;
+    margin-bottom: 3.6em;
+}
+
+.logo {
+    float: left;
+    width: 20.744680851064%; /*234px / 1128px */  
+}
+
+.menu {
+    width: 74.468085106383%; /*840px / 1128px */
+    float: right;
+}
+
+.menu ul {
+    float: right;
+}
+
+.menu li {
+    font-size: 1.2em;
+    margin-left: 2em;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.menu li a {
+    color: #999;
+}
+
+.banner {
+    background: url('../img/banner.jpg'); 
+    height: 450px;
+    margin-bottom: 4.8em;
+    position: relative;
+}
+
+.caixa { 
+    width: 42.553191489362%; /* 264px / 1128px */
+    padding: 2.4em 4em 2.4em 4em;
+    position: absolute;
+    top: 48px;
+    background: rgba(0,0,0,0.6);
+}
+
+
+h1  {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 4em;
+    font-weight: 200;
+    color: #FFF;
+}
+
+
+.caixa p {
+    font-size: 1.8em;
+    font-weight: 200;
+    color: #fff;
+}
+
+.coluna {
+    width: 23.404255319149%; /* 264px / 1128px */
+    float: left;
+    margin-right: 2.127659574468%; /* 24 / 1128px */
+}
+
+.coluna:last-child {
+    margin-right: 0;
+}
+
+h2 {
+    font-size: 2.4em;
+    font-weight: 200;
+}
+
+p {
+    font-size: 1.6em;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 2.4em;
+    margin-bottom: 2.4em;
+    float: left;
+    clear: both;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+.footer small {
+    font-size: 1.4em;
+}
+
+.footer a {
+    font-size: 1em;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+@media screen and (max-width: 1128px) {
+
+    .container {
+        padding: 0 2.4em 0 2.4em;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .caixa {
+        width: 65%;
+    }
+
+    .coluna {
+        width: 48%;
+        margin-bottom: 2.4em;
+        margin-right: 2%;
+    }
+
+    .coluna:nth-child(even) {
+       margin-right: 0;
+    }
+
+    .logo {
+        margin-top: 1.2em;
+    }
+
+}
+
+
+@media screen and (max-width: 718px) {
+
+   .banner {
+        position: relative;
+        float: left;
+        margin:0;
+        height: 150px;
+    }
+
+    .caixa {
+        position: relative;
+        display: block;
+        float: left;
+        margin-top:100px;
+        width: 100%;
+        background: #000;
+    }
+
+    .caixa h1 {
+        font-size: 2.5em;
+    }
+
+    .principal {
+        margin-top: 450px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .menu {
+        width: 100%;
+    }
+    
+    .menu ul {
+        float: left;
+        font-size: 0.8em;
+    }
+
+    .menu li:first-child {
+        margin-left: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 520px) {
+
+    .coluna {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .caixa {
+         padding: 1.2em 2em 1.2em 2em;
+    }
+
+     .banner {
+        height: 120px;
+    }
+
+    .caixa {
+        position: relative;
+        display: block;
+        float: left;
+        margin-top:80px;
+        width: 100%;
+        background: #000;
+    }
+
+
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; 
+    display: table; 
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
